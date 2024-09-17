@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*global design*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #4c4d5f;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(242, 250, 255, 1) 30%
+  );
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*end global design*/
+.btn-primary {
+  background-color: #00a37e;
+  border: none;
+  color: white;
+  border: 1px solid #00a37e;
+}
+.btn-primary:hover {
+  background-color: #028d6c;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #00a37e;
+  border: 1px solid #00a37e;
+}
+.btn-secondary:hover {
+  background-color: #00a37e;
+  color: white;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 0;
+}
+
+header nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-left: 80px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #4c4d5f;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+}
+
+.cta-container {
+  display: flex;
+  gap: 15px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown svg {
+  fill: #4c4d5f;
+  stroke-width: 0.1px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 150px auto;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.main-title {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+#monthly {
+  font-weight: 500;
+}
+
+#yearly {
+  color: #868a97;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+/*begin card design*/
+.card {
+  background-color: white;
+  border: 1px solid #d2d3e0;
+  border-radius: 3px;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.card-price-container {
+  display: flex;
+  gap: 6px;
+}
+
+.card-price-currency {
+  align-self: flex-start;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.card-price {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.card-price-duration {
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+
+.card-separator {
+  color: #01b289;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.card-list li svg {
+  fill: #01b289;
+  min-width: 20px;
+}
+
+.card-btn {
+  margin-top: 40px;
+  padding: 25px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#professional {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-badge {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  background-color: #01b289;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 100px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+/*end card design*/
+/*begin sections design */
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+.section-title h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: -70px;
+}
+#Collaborators-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#Box {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 15px auto;
+  padding: 45px 30px;
+}
+.box-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.box-p {
+  font-size: 0.8rem;
+}
+#free {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-right: 20px;
+}
+strong {
+  color: #00a37e;
+}
+
+#second {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 920px;
+  margin: 80px auto;
+  padding: 45px 20px;
+  border-radius: 4px;
+}
+#second div p {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.section-btn {
+  margin: 50px 30px;
+  padding: 15px 30px;
+}
+#third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 30px;
+}
+#third h2 {
+  color: #01b289;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#third ul {
+  list-style: none;
+}
+#third li {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  margin-right: 300px;
+}
+#third li:hover {
+  color: #01b289;
+  cursor: pointer;
+}
+/*end sections design*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+footer h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  font-weight: 200;
+  margin: 20px 0;
+  cursor: pointer;
+}
